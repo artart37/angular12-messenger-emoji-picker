@@ -1,0 +1,140 @@
+:host{
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.toolbar{
+    color: #3E52BE;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+header.toolbar{
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 0;
+}
+.footer.toolbar{
+    margin-top: 16px;
+    width: 100%;
+    padding: 0;
+}
+.content{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #90A4AE;
+    width: 100%;
+    position: relative;
+}
+
+textarea{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #224272;
+    width: 100% !important;
+    min-height: 95px;
+    padding: 16px;  ;
+    outline: none;
+    border: 1px solid #F7F8F9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+textarea::placeholder{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #90A4AE;
+}
+.jamesBond{
+    background: #FFFFFF;
+    left: auto;
+    position: absolute;
+    right: 1.5px;
+    top: calc(100% - 16px);
+    width: 14px;
+    height: 11px;
+    border-radius: 4px;
+}
+.small{
+    border-radius: 18px;
+    line-height: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+}
+.pointer{
+    cursor: pointer;
+}
+.emojiPicker{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+.emoji{
+    height: 24px;
+    flex: 1 1 24px;
+    padding: 5px 5px;
+    max-width: 24px;
+}
+
+.savefield{
+    margin-top: 16px;
+    padding: 14px;
+    background: #F7F8F9;
+    border-radius: 10px;
+}
+.savefield > .data{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #3E52BE;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+.savefield > .savedMessage{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #263238;
+    margin-top: 8px;
+    overflow-wrap: break-word;
+}
+.smallicon.mat-icon{
+    padding: 0 4px 0 0;
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    position: relative;
+}

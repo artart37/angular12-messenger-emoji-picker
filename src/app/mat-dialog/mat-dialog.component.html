@@ -1,0 +1,32 @@
+<div class="container">
+    <header class="toolbar">
+        <span>Your Diary</span>
+        <mat-icon (click)="close()" class="pointer">arrow_forward</mat-icon>
+    </header>
+    <section class="content">
+        <textarea placeholder="Write something" tabindex="-1" #textarea class="resizer bottom-right" [style.width]="tWidth" [style.height]="tHeight"></textarea>
+        <span class="jamesBond"></span>
+        <mat-icon [style]="iconStyle" (mousedown) = "grabber($event)">filter_list</mat-icon>
+    </section>
+    <div class="emojiPicker" *ngIf="!toggler">
+        <ng-container *ngFor="let emojicode of emojiArray, let i = index; trackBy:trackbyID">
+            <div #emojiel [innerHTML]="emojicode | emoji" class="emoji pointer" (click)="addEmoji(emojiel)"></div>
+        </ng-container>
+    </div>
+    <div class="footer toolbar">
+        <mat-icon class="pointer" (click)="emojiPicker()">mood</mat-icon>
+        <button mat-flat-button color="primary" class="small" tabindex="-1" (click)="saveMemory()">Save</button>
+    </div>
+    <div class="savefield" *ngIf="message">
+        <section class="data">
+            <section class="date">
+                <mat-icon class="smallicon">date_range</mat-icon>
+                <span>{{realdate | date:"HH:mm a"}} | {{realdate | date:"MMM d, y"}}</span>
+            </section>
+            <mat-icon class="smallicon">more_vert</mat-icon>
+        </section>
+        <section class="savedMessage">
+            <span class="message">{{message}}</span>
+        </section>
+    </div>
+</div>
